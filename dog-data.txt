@@ -1,0 +1,31 @@
+Image
+	http://www.dogbreedchart.com/img/beagle.jpg
+Dog Breed 
+	Beagle
+Size
+	2
+Link
+	More Info
+	https://en.wikipedia.org/wiki/Beagle
+
+
+Image
+	http://www.dogbreedchart.com/img/boxer.jpg
+Dog Breed 
+	Boxer
+Size
+	3
+Link
+	More Info
+	https://en.wikipedia.org/wiki/Boxer_(dog)
+
+
+Image
+	http://www.dogbreedchart.com/img/german-shepherd-dog.jpg
+Dog Breed 
+	German Shepard
+Size
+	4
+Link
+	More Info
+	https://en.wikipedia.org/wiki/German_Shepherd
