@@ -9,11 +9,37 @@
 <body>
     <h1>Sign In</h1>
 
-    <form>
+    <h2>Form Enhancements</h2>
+    <form action="http://www.google.com">
         <input name="username" type="text" placeholder="username">
         <input name="password" type="password" placeholder="password">
         <input type="submit">
     </form>
+
+    <!--<h2>Google Test Search</h2>
+    <form action="http://www.google.com">
+        <input name="q" type="text" placeholder="search query">
+        <input type="submit">
+    </form>-->
+
+    <!--<h2>Form with Labels</h2>
+    <h3>Option 1</h3>
+    <form action="http://www.google.com">
+        <label>Username: <input name="username" type="text"></label>
+        <label>Password: <input name="password" type="password"></label>
+        <input type="submit">
+    </form>-->
+
+    <!-- Instead of nesting the label tag, we connect them using for and id. 
+        This will support screen readers for the visually impaired. -->
+    <!--<h3>Option 2</h3>
+    <form action="http://www.google.com">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <input type="submit">
+    </form>-->
 </body>
 
 </html>
