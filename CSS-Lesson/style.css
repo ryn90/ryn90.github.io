@@ -1,0 +1,15 @@
+selector {
+    color: red; 
+    color: blue;
+}
+
+/* Make the h1 elements within the website red and 60px font */
+h1 {
+    color: red; 
+    font-size: 60px;
+}
+
+/* Make the table to have a border of 1px that is solid */
+table { 
+    border: 1px solid;
+}
