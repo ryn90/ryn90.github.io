@@ -1,12 +1,10 @@
-selector {
-    color: red; 
-    color: blue;
-}
-
 /* Make the h1 elements within the website red and 60px font */
 h1 {
-    color: red; 
-    font-size: 60px;
+    color: red;
+}
+
+li {
+    color: blue;
 }
 
 /* Make the table to have a border of 1px that is solid */
