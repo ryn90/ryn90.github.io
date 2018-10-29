@@ -11,34 +11,30 @@
             color: red;
         }
 
-        ul {
-            color: blue;
+        li {
+            color: green;
         }
 
-        /* li {
-            color: green;
-        } */
+        .highlight {
+            color: orange;
+        }
+
+        #unique {
+            color: pink;
+        }
     </style>
 </head>
 
 <body>
     <p>Paragraph</p>
-    <!-- 1. Note that the LI's are blue, even though we did not specify a colour on them 
-        It's inheriting the style fom the UL. Similarly, notice how it's overriding the colour to blue from red
-        even though we set the body to be red. This is because of CSS Specificty, when there are conflicting styles
-        the browser will take the most specific style 
-    -->
     <ul>
         <li class="highlight">Person 1</li>
         <li>Person 2</li>
         <li class="highlight">Person 3</li>
+        <li>Person 4</li>
+        <!-- which color will be applied to Person 1 and Person 3?-->
+        <!-- <li id="unique" class="highlight">Person 5</li>-->
     </ul>
-    <!-- 2. Let's look at the developer tools and notice two things:
-        1) The inherited style
-        2) The overridden style 
-    -->
-
-    <!-- 3. What happens if I set li to be green? Let's remove the comment and inspect this -->
 </body>
 
 </html>
