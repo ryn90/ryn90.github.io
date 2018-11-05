@@ -1,0 +1,31 @@
+/* font-family */
+/* h1 {
+    font-family: Georgia;
+}
+
+p {
+    font-family: Arial; 
+} */
+
+/* can be written with quotes when it contains a space within the string, such as Times New Roman */
+
+/* font-size */
+
+/* Let's also look at ems - https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
+/* There is this example - https://j.eremy.net/confused-about-rem-and-em/, that also mentioned rem */ 
+p {
+    font-size: 40px;
+}
+
+/* span {
+    font-size: 2.0em; 
+} */
+/* very useful so that once you would like to change the size of the font throughout, or for a special media query, everything else adjusts on its own */ 
+
+/* font-weight */
+
+/* line-height */
+
+/* text-align */
+
+/* text-decoration */ 
