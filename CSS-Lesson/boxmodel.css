@@ -1,0 +1,9 @@
+/* let's look at percentage sizes to have a responsive feeling to our site */
+p {
+    width: 50%;
+    border: 2px red solid; 
+    margin: 10px;
+    padding: 20px;
+}
+/* let's look at the multiple shorthand version to create padding and margin */ 
+/* look at margin: 0 auto; for centering the container */ 

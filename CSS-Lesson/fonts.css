@@ -13,18 +13,18 @@ p {
 
 /* Let's also look at ems - https://developer.mozilla.org/en-US/docs/Web/CSS/font-size */
 /* There is this example - https://j.eremy.net/confused-about-rem-and-em/, that also mentioned rem */ 
-p {
+/* p {
     font-size: 40px;
-}
+} */
 
 /* span {
     font-size: 2.0em; 
 } */
 /* very useful so that once you would like to change the size of the font throughout, or for a special media query, everything else adjusts on its own */ 
 
-/* font-weight */
+/* font-weight 100 - 800 */
 
-/* line-height */
+/* line-height - 2 means double spacing, similar to Word's line spacing */
 
 /* text-align */
 
