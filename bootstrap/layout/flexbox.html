@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Flexbox</title>
+    <style>
+        .my-div {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flexbox</h1>
+        <!-- https://getbootstrap.com/docs/4.1/utilities/flex/ -->
+        <!-- upon adding the d-flex the buttons attempt to take the entire height of the availible div -->
+        <!-- let's inspect what .d-flex does -->
+        <!-- justify content: default is justify-content-start; we can also use -end, -center, -between and -around -->
+        <div class="border border-dark d-flex justify-content-around my-div">
+            <button class="btn btn-info btn-lg">LARGE</button>
+            <button class="btn btn-warning">SMALL</button>
+            <button class="btn btn-warning">SMALL</button>
+        </div>
+
+        <br>
+
+        <!-- flexbox works on two axis, the X and Y axis -->
+        <!-- adding align-items-start adds how it is styled on the y axis -->
+        <!-- options are align-items-start; center; end; baseline; stretch (default)-->
+        <!-- <div class="border border-dark d-flex justify-content-around align-items-baseline my-div">
+            <button class="btn btn-info btn-lg">LARGE</button>
+            <button class="btn btn-warning">SMALL</button>
+            <button class="btn btn-warning">SMALL</button>
+        </div> -->
+
+        <!-- Flexbox Part 2 -->
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
