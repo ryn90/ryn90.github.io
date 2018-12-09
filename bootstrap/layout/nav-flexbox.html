@@ -15,13 +15,48 @@
 
 <body>
     <h1>Nav Flexbox</h1>
+    <h2>Navbar Style 1</h2>
     <!-- navs are built with flexbox, this means we can change them using what we just learned about FlexBox-->
+    <!-- by default the nabvar is set to display flex, because it works with flexbox out of the box, let's inspect it to see this -->
     <nav class="nav">
         <a class="nav-link active" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" href="#">Disabled</a>
     </nav>
+    <h2>Navbar Style 2</h2>
+    <!-- note you do not have to set it to display flex since that's done out of the box -->
+    <nav class="nav border justify-content-around">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </nav>
+    <h2>Column Navbar</h2>
+    <nav class="nav flex-column">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </nav>
+    <h2>Reverse Column Navbar</h2>
+    <nav class="nav flex-column-reverse">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </nav>
+    <h2>Responsive Navbar</h2>
+    <!-- responsive navbar -->
+    <!-- justify content-center will not work in a column, then we need to use align-items-center -->
+    <nav class="nav flex-column flex-sm-row justify-content-center align-items-center">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </nav>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
