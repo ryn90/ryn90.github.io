@@ -48,13 +48,22 @@
     </nav>
     <h2>Responsive Navbar</h2>
     <!-- responsive navbar -->
-    <!-- justify content-center will not work in a column, then we need to use align-items-center -->
+    <!-- justify content-center is used for alignment on the main axis, then we need to use align-items-center on the cross axis -->
+    <!-- explained here - https://getbootstrap.com/docs/4.1/utilities/flex/ -->
     <nav class="nav flex-column flex-sm-row justify-content-center align-items-center">
         <a class="nav-link active" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link disabled" href="#">Disabled</a>
     </nav>
+    <h2>Tab Navbar</h2>
+    <nav class="nav nav-tabs">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </nav>
+
 
 
 
