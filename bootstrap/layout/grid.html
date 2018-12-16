@@ -9,27 +9,47 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
 	 crossorigin="anonymous">
 	<title>Grid</title>
-	<style>
-		.row {
-			background-color: grey;
-		}
-	</style>
 </head>
 
 <body>
 	<div class="container">
-		<h1>Grid</h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm">
-					One of three columns
-				</div>
-				<div class="col-sm">
-					One of three columns
-				</div>
-				<div class="col-sm">
-					One of three columns
-				</div>
+		<h1>Bootstrap Grid</h1>
+		<div class="row border">
+			<!-- Bootstrap Grid is built on 12 columns that and we can have a number of columns using these -->
+			<!-- Now let's change col to col-4 and the second one to col-8 to see how they behave -->
+			<div class="col bg-danger">
+				Column 1
+			</div>
+			<div class="col bg-info">
+				Column 2
+			</div>
+		</div>
+
+		<div class="row border">
+			<!-- The same as above, but they are set to a grid only from small screen sizes onwards, thus leaving the 
+                extra small dimensions to stack on top of each other. Furthemore, I've set a different breakpoint
+                when the viewport is XL. -->
+			<div class="col-sm-6 col-xl-4 bg-danger">
+				Column 1
+			</div>
+			<div class="col-sm-6 col-xl-8 bg-info">
+				Column 2
+			</div>
+		</div>
+
+		<div class="row border">
+			<!-- By not specifing a number after the 'col' it will set all columns to equal width -->
+			<div class="col bg-danger">
+				Column 1
+			</div>
+			<div class="col bg-info">
+				Column 2
+			</div>
+			<div class="col bg-danger">
+				Column 3
+			</div>
+			<div class="col bg-info">
+				Column 4
 			</div>
 		</div>
 	</div>
