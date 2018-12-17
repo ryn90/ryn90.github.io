@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Grid + Flexbox</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grid + Flexbox</h1>
+        <!-- let's experiment with the flexbox classes to move where this content is shown -->
+        <div class="row border justify-content-center">
+            <div class="col-6 bg-danger ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae. Nam pellentesque nunc at rhoncus maximus. Ut dapibus quam ac blandit laoreet. In
+                volutpat eleifend tortor, vel varius nibh eleifend sit amet. In ultrices diam nec nibh aliquet aliquam.
+                Donec tristique porttitor vestibulum. Vivamus pretium massa ex, quis fringilla quam ornare non.
+                Phasellus pretium eu libero vitae imperdiet. Nulla elit lectus, dictum eu arcu placerat, efficitur
+                mollis dui. Donec fringilla orci enim, condimentum aliquet eros aliquam et.
+            </div>
+        </div>
+
+        <h2>Aligning Multiple Columns</h2>
+        <!-- we can also use flexbox to align multiple columns and give them some spacing between them without 
+            having to specify an empty column. We can also use flexbox to center different sized divs accordingly. 
+            By default, they are set to stretch and start from the top on the Y axis (cross axis). 
+            Obviously, we can also still change things on the main axis to achieve the look we want -->
+        <div class="row border justify-content-center align-items-center">
+            <div class="col-3 bg-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae. Nam pellentesque nunc at rhoncus maximus. Ut dapibus quam ac blandit laoreet. In
+                volutpat eleifend tortor, vel varius nibh eleifend sit amet.
+            </div>
+            <div class="col-3 bg-danger">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae. Nam pellentesque nunc at rhoncus maximus. Ut dapibus quam ac blandit laoreet. In
+                volutpat eleifend tortor, vel varius nibh eleifend sit amet. In ultrices diam nec nibh aliquet aliquam.
+                Donec tristique porttitor vestibulum. Vivamus pretium massa ex, quis fringilla quam ornare non.
+                Phasellus pretium eu libero vitae imperdiet. Nulla elit lectus, dictum eu arcu placerat, efficitur
+                mollis dui. Donec fringilla orci enim, condimentum aliquet eros aliquam et.
+            </div>
+            <div class="col-3 bg-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae. Nam pellentesque nunc at rhoncus maximus. Ut dapibus quam ac blandit laoreet. In
+                volutpat eleifend tortor, vel varius nibh eleifend sit amet.
+            </div>
+        </div>
+
+        <h2>Overriding layout position of items individually</h2>
+        <!-- align-self can be used to override whatever has been set on the row in this case. Items can be styled individually as well -->
+        <div class="row border justify-content-center align-items-end">
+            <div class="col-2 bg-info align-self-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+            <div class="col-2 bg-info align-self-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+            <div class="col-2 bg-info align-self-end">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, ex. Aliquid, architecto molestiae porro
+                dolor fuga, saepe officiis hic inventore commodi ad non vero voluptates et magni. Mollitia, nisi.
+                Animi.
+            </div>
+            <div class="col-2 bg-info align-self-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+            <div class="col-2 bg-info align-self-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+        </div>
+
+        <!-- using breakpoint to set how things are seen within the different breakpoints and using flexbox to show them as preferred -->
+        <h2>Responsive Example</h2>
+        <div class="row border justify-content-between">
+            <div class="col-md-6 col-lg-5 bg-danger">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+            <div class="col-md-6 col-lg-5 bg-danger">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum vehicula dui, eget convallis
+                dolor lacinia vitae.
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
