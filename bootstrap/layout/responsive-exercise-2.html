@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <title>Ryan Sammut's Portfolio</title>
+</head>
+
+<body>
+    <!-- to achieve this look, I've removed to div.container that was within the nav 
+        and applied a number of other bootstrap classes to achieve this look. -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm py-0">
+        <a href="http://www.ryansammut.com" class="navbar-brand">
+            <i class="fas fa-laptop-code mr-1"></i>
+            Ryan Sammut
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link text-light">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-light">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link text-light">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- container-fluid utilises the entire width of the browser -->
+    <div class="container-fluid px-0">
+        <!-- align-items-center will show the text and image always in the middle -->
+        <div class="row align-items-center">
+            <!-- order is being used to change how they are shown depending on the viewport -->
+            <div class="col-md-6 pr-0 order-2 order-md-1">
+                <!-- img-fluid class makes our image reponsive and allows it to scale within the parent element -->
+                <img src="images/ryan.jpg" class="img-fluid" alt="ryan sammut">
+            </div>
+            <!-- the pl-0 and pl-3 are being used to remove the padding from the parent but adding some padding for the content. 
+                With this technique, the corners of the images can touch together and this is a technique I wanted to achieve -->
+            <div class="col-md-6 justify-content-center align-items-center pl-0 order-1 order-md-2">
+                <div class="pl-3">
+                    <h1 class="display-2 mt-1 text-center">Welcome to Ryan Sammut's Portfolio</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 justify-content-center  pr-0">
+                <div class="pr-3">
+                    <h1 class="display-2 mt-1 text-center">Welcome to Ryan Sammut's Portfolio</h1>
+                </div>
+            </div>
+            <div class="col-md-6 pl-0">
+                <img src="images/ryan.jpg" class="img-fluid" alt="ryan sammut">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
