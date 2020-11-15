@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cascade Example</title>
+
+    <title>Cascade & Inheritance Example</title>
+    <link rel="stylesheet" href="cascade.css">
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             color: red;
         }
 
@@ -15,10 +18,11 @@
             color: blue;
         }
 
-        /* li {
+        li {
             color: green;
-        } */
+        }
     </style>
+
 </head>
 
 <body>
@@ -34,8 +38,9 @@
         <li>Person 3</li>
     </ul>
     <!-- 2. Let's look at the developer tools and notice two things:
-        1) The inherited style
-        2) The overridden style 
+        1) The inherited style - Also note that although there is a linked CSS file stating to show the ul as purple, 
+        it's being overridden. What happens if we move it to the end of the file?
+        2) The overridden style   
     -->
 
     <!-- 3. What happens if I set li to be green? Let's remove the comment and inspect this -->
