@@ -7,6 +7,7 @@ const list = document.querySelector(".ajax-section .cities");
 /*SUBSCRIBE HERE FOR API KEY: https://home.openweathermap.org/users/sign_up*/
 const apiKey = "840d10c54dca1f3957bb9910e25e13fd";
 
+/* This section is repsonsible for capturing data from the form and handling it upon submit */
 form.addEventListener("submit", e => {
     e.preventDefault();
     let inputVal = input.value;
@@ -51,10 +52,8 @@ form.addEventListener("submit", e => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const { main, name, sys, weather } = data;
-            const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]
-                }.svg`;
+            const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
 
             const li = document.createElement("li");
             li.classList.add("city");
@@ -80,3 +79,40 @@ form.addEventListener("submit", e => {
     form.reset();
     input.focus();
 });
+
+/* This section is responsible for retrieving the current location and adding it by default if the user consents */
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(addToList);
+}
+
+function addToList(position) {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const { main, name, sys, weather } = data;
+            const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
+
+            const li = document.createElement("li");
+            li.classList.add("city");
+            const markup = `
+                <h2 class="city-name" data-name="${name},${sys.country}">
+                    <span>${name}</span>
+                    <sup>${sys.country}</sup>
+                </h2>
+                <div class="city-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+                <figure>
+                    <img class="city-icon" src="${icon}" alt="${weather[0]["description"]}">
+                    <figcaption>${weather[0]["description"]}</figcaption>
+                </figure>
+            `;
+            li.innerHTML = markup;
+            list.appendChild(li);
+        })
+        .catch(() => {
+            msg.textContent = "Failed to retrieve current location";
+        });
+}
