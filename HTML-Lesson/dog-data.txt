@@ -1,5 +1,5 @@
 Image
-	http://www.dogbreedchart.com/img/beagle.jpg
+	https://dogtime.com/assets/uploads/2011/01/file_23012_beagle-460x290.jpg
 Dog Breed 
 	Beagle
 Size
@@ -10,7 +10,7 @@ Link
 
 
 Image
-	http://www.dogbreedchart.com/img/boxer.jpg
+	https://dogtime.com/assets/uploads/2011/01/file_22916_boxer-460x290.jpg
 Dog Breed 
 	Boxer
 Size
@@ -21,7 +21,7 @@ Link
 
 
 Image
-	http://www.dogbreedchart.com/img/german-shepherd-dog.jpg
+	https://dogtime.com/assets/uploads/2011/01/file_23188_german-shepherd-dog-460x290.jpg
 Dog Breed 
 	German Shepard
 Size
